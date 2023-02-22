@@ -1,0 +1,44 @@
+﻿<Window x:Class="Donor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Donor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1000">
+    <Grid>
+        <Canvas x:Name="btnSave" HorizontalAlignment="Left" Height="642" VerticalAlignment="Top" Width="982" Margin="0,-23,0,0" Opacity="0.94" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+            <TextBlock Canvas.Left="28" TextWrapping="Wrap" Text="ID:" Canvas.Top="168" FontSize="20" FontWeight="Bold" RenderTransformOrigin="1.574,4.088"/>
+            <TextBox x:Name="txtID" Height="46" Canvas.Left="139" TextWrapping="Wrap" Canvas.Top="149" Width="259" RenderTransformOrigin="0.521,1.617" FontSize="18" TabIndex="1"/>
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Title:" Canvas.Top="230" FontSize="20" FontWeight="Bold"/>
+            <ComboBox x:Name="cmbTitle" Canvas.Left="139" Canvas.Top="214" Width="259" Height="43" FontSize="18" TabIndex="2"/>
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Firstname :" Canvas.Top="304" Height="32" FontSize="20" FontWeight="Bold"/>
+            <TextBox x:Name="txtFristname" Height="42" Canvas.Left="139" TextWrapping="Wrap" Canvas.Top="287" Width="259" FontSize="18" TabIndex="3"/>
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Lastname :" Canvas.Top="373" FontSize="20" FontWeight="Bold" Width="104"/>
+            <TextBox x:Name="txtLastname" Height="33" Canvas.Left="138" TextWrapping="Wrap" Canvas.Top="367" Width="260" FontSize="18" TabIndex="3"/>
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Gender :" Canvas.Top="461" FontSize="20" RenderTransformOrigin="0.509,-0.679" FontWeight="Bold"/>
+            <ComboBox x:Name="cmbGender" Canvas.Left="138" Canvas.Top="448" Width="260" RenderTransformOrigin="0.466,1.649" Height="40" FontSize="18" TabIndex="5"/>
+            <TextBlock Canvas.Left="28" TextWrapping="Wrap" Text="Age :" Canvas.Top="542" FontSize="20" RenderTransformOrigin="0.767,-1.211" FontWeight="Bold"/>
+            <TextBox x:Name="txtAge" Height="40" Canvas.Left="138" TextWrapping="Wrap" Canvas.Top="512" Width="260" FontSize="18" TabIndex="6"/>
+            <TextBlock Canvas.Left="461" TextWrapping="Wrap" Text="BloodGroup :" Canvas.Top="168" FontSize="20" FontWeight="Bold" RenderTransformOrigin="1.072,2.483"/>
+            <TextBlock Canvas.Left="462" TextWrapping="Wrap" Text="Address :" Canvas.Top="230" FontSize="20" FontWeight="Bold" RenderTransformOrigin="1.23,1.761"/>
+            <TextBlock Canvas.Left="462" TextWrapping="Wrap" Text="Email :" Canvas.Top="282" FontSize="20" Width="87" RenderTransformOrigin="-0.487,0.368" FontWeight="Bold"/>
+            <TextBlock Canvas.Left="448" TextWrapping="Wrap" Text="Contact :" Canvas.Top="323" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.437,1.767"/>
+            <TextBox x:Name="txtAddress" Height="37" Canvas.Left="616" TextWrapping="Wrap" Canvas.Top="220" Width="284" FontSize="18" TabIndex="8"/>
+            <TextBox x:Name="txtEmail" Height="42" Canvas.Left="616" TextWrapping="Wrap" Canvas.Top="267" Width="284" FontSize="18" RenderTransformOrigin="0.542,0.987" TabIndex="9"/>
+            <TextBox x:Name="txtContact" Height="42" Canvas.Left="616" TextWrapping="Wrap" Canvas.Top="323" Width="284" FontSize="18" RenderTransformOrigin="0.535,1.044" TabIndex="10"/>
+            <ComboBox x:Name="cmbBloodGroup" Canvas.Left="616" Canvas.Top="168" Width="284" Height="38" FontSize="18" RenderTransformOrigin="0.348,0.566" TabIndex="7"/>
+
+            <Button x:Name="btnShow" Click="btnShow_Click" Content="ShowAll" Canvas.Left="342" Canvas.Top="594" Width="113" RenderTransformOrigin="0.53,1.414" FontWeight="Bold" FontSize="24"/>
+            <Button x:Name="btnsave" Content="Save" Canvas.Left="159" Canvas.Top="594" Width="75" Click="btnsave_Click" FontWeight="Bold" RenderTransformOrigin="0.371,2.998" FontSize="24"/>
+            <Button x:Name="btnUpdate"  Content="Update" Canvas.Left="547" Canvas.Top="594" Width="121" Click="BtnUpdate_Click" FontWeight="Bold" RenderTransformOrigin="0.502,1.208" FontSize="24"/>
+            <DatePicker x:Name="date" Canvas.Left="616" Canvas.Top="381" RenderTransformOrigin="-0.799,4.942" Width="284" FontWeight="Bold" Height="32" FontSize="18" TabIndex="11"/>
+            <TextBlock Canvas.Left="448" TextWrapping="Wrap" Text="Date of birth " Canvas.Top="378" FontWeight="Bold" FontSize="20" RenderTransformOrigin="0.534,-0.822"/>
+            <TextBlock Canvas.Left="479" TextWrapping="Wrap" Text="Image" Canvas.Top="442" FontWeight="Bold" FontSize="18" Height="27"/>
+            <Button x:Name="btnUpload" Content="Upload" Canvas.Left="616" Canvas.Top="442" Width="75" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.116,0.167"  Click="btnUpload_Click_1"/>
+            <Image x:Name="ImageShow" Height="110" Canvas.Left="755" Canvas.Top="442" Width="112" RenderTransformOrigin="0.684,0.288"/>
+        </Canvas>
+        <TextBlock HorizontalAlignment="Left" Margin="176,10,0,0" TextWrapping="Wrap" Text="Blood Donor Information" VerticalAlignment="Top" FontSize="36" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

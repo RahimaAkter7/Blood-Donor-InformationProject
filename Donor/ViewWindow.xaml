@@ -1,0 +1,39 @@
+﻿<Window x:Class="Donor.ViewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Donor"
+        mc:Ignorable="d"
+        Title="ViewWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="207*"/>
+            <ColumnDefinition Width="190*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="2" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Margin="0,0,-0.4,0">
+            <TextBlock x:Name="txtview" TextWrapping="Wrap" Canvas.Top="77" Height="274" Width="396" RenderTransformOrigin="0.5,0.5" Canvas.Left="139" FontSize="20" FontWeight="Bold" FontFamily="Century Gothic">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.118"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="0.002"/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <Button x:Name="btn_BACK" Content="" Canvas.Left="10" Canvas.Top="10" Width="33" Click="btn_BACK_Click" Height="40">
+                <Button.Background>
+                    <ImageBrush ImageSource="download.png"/>
+                </Button.Background>
+            </Button>
+            <Image x:Name="imageView" Height="181" Canvas.Left="585" Canvas.Top="129" Width="158"/>
+        </Canvas>
+        <Button x:Name="btn_close" Content="" HorizontalAlignment="Left" Margin="295.4,10,0,0" VerticalAlignment="Top" Width="45" Click="btn_close_Click" Height="25" Grid.Column="1">
+            <Button.Background>
+                <ImageBrush ImageSource="images (1).png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
